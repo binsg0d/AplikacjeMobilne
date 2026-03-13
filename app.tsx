@@ -11,11 +11,25 @@ export default function App() {
       <Text style= {styles.subtitle}>Moja pierwsza aplikacja mobilna</Text>
       <StatusBar style="auto" />
       <Button title="Zwiększ" onPress={() => setCount(count + 1)} />
+      <Text>Licznik: {count}</Text>
 </View> 
+
+
+
+  );
+}
+function Header() {
+  return (
+    <view>
+      <Text style= {{fontSize:24}}>Smart Campus</Text>
+
+    </view>
+
 
 );
 }
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,
     backgroundColor: '#f2f2f2',
@@ -32,4 +46,5 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
 });
+  
   
